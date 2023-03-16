@@ -1,0 +1,2700 @@
+
+PROGRAM : IS A COLLECTION OF INSTRUCTIONS : process the data 
+low level language: 0101110101010000101000
+
+big=x if x>y else y
+
+what is a python?
+python is a general purpose high level programming language
+
+c lang: system software: 
+ex: os, translator 
+
+low level: 
+	machine level langu: application: 0s 1s
+
+high level : english 
+
+high level language				run these instruction: computer
+translator: 1) compiler		2) interpreter
+compiled language: c, c++
+interpreted language: python
+
+1) machine learning application
+2) IOT application
+3) desktop
+4) web
+5) AI
+6) datascience application
+
+who is the father of python?
+GUIDO VAN ROSSUM : 20TH FEB 1991
+JAVA: 1995
+BBC: 1980s: monty python's flying circus
+
+what is the pre requisite to learn python?
+nothing
+
+python		core python			adv python
+
+Features of python:
+================
+1) simple & easy to learn
+2) general purpose high level progr lang
+3) interpreted program lang
+	python interpreter: pvm (python virtual machine)
+4) open source:
+5) freeware: 
+		www.python.org
+*****6) dynamically typed 
+7) proce oriented & object prog langu 
+8) portability
+9) platform independent
+10) extensible
+11) embedded
+12) huge library
+
+
+simple & Easy to learn: 
+2002: 
+c: i never felt: not that much easy
+c++:  java: not that much easy
+
+www.python.org
+psf: python software fundatation
+
+c prog langu
+c lang- python 
+
+
+platform independent: 
+
+in c, c++ , java we cant declare a variable without its data type
+c,c++,java: statically typed progr language
+
+	int n;
+
+dynamically typed prog langu: at the time of delcaring a variable we are not required to 
+specify its data type
+pvm will decide the type of the variable based on the value assigned to it
+
+x=154
+type(x)
+<class 'int'>
+avg=1.258
+type(avg)
+c1=2+3j
+type(c1)
+<class 'complex'>
+fac='pavan sir'
+type(fac)
+<class 'str'>
+
+
+1) learning python is easy & simple
+2) general purpose high level prog langu
+3) interpreted prog lang
+4) freeware
+5) opensource
+6) platform independent
+7) portability
+8) dynamically typed prog langu
+9) extensible
+10) embedded
+11) richest library
+12) proc oriented, object, scirpting, modular programming
+
+
+python versions: python 1, python 2, python 3.10
+
+Note: python wont support backward compatibility
+
+what is a program?
+is a collection of instructions to process the data to get result 
+
+whenever data is given to a program during program execution time: memory
+
+identifier: named elements in the program: variable, function, class, module name
+rules:
+1) first letter must be an alphabet(either lowercase/uppercase) (or) underscore (_)
+note: highly recommended not to use underscore as first letter
+2) 2nd letter onwards: alphanumeric 
+3) no spaces are allowed within a name
+4) no spl symbols are allowed (except underscore)
+5) no restriction on the length of the name
+6) KEYWORDS: reserved words cant be used for naming purpose
+
+				identifier					answer
+				=================================
+				marks05							v
+				_regno							v
+				cse_mks_total					v
+				vehicle number					i (space)
+				costin$							i(dollar symbol)
+				007ap							i(first letter digit)
+				aAaAaA							v
+				with							i (keyword)
+
+
+>>> i=1
+>>> from keyword import *
+>>> for ele in kwlist:
+...     print(f"{i}){ele}")
+...     i=i+1
+
+keyword in python: a total of 35 keywords
+1)False
+2)None
+3)True
+4)and
+5)as
+6)assert
+7)async
+8)await
+9)break
+10)class
+11)continue
+12)def
+13)del
+14)elif
+15)else
+16)except
+17)finally
+18)for
+19)from
+20)global
+21)if
+22)import
+23)in
+24)is
+25)lambda
+26)nonlocal
+27)not
+28)or
+29)pass
+30)raise
+31)return
+32)try
+33)while
+34)with
+35)yield
+
+>>> 'with' in kwlist
+True
+>>> 'pavan' in kwlist
+False
+
+variable: is a named memory location holding the data
+when ever if u want to refer the data in the program we can use variable 
+
+data types in python:
+=======================
+1) int
+2) float
+3) complex
+4) str
+5) bool
+6) None
+7) List
+8) Tuple
+9) set
+10) frozenset
+11) dict
+
+	school level application: student : sname
+
+int data type: in the form of a number
+==============
+any number without decimal part is treated int 
+ex: 7   2589      125478
+
+tno=2589
+
+integer can be represented in any one of the following systems:
+1) decimal number: in decimal number system every digit must be in the range of 0 to 9
+ex: 785, 12456
+2) binary number: either 0 or 1
+0b1010101111
+0B111000
+3) octal number: u are allowed to use digits in the range of 0 to 7
+ex: 0o6542
+4) hexadecimal number: you are allowed to use digits: 0 to 9 ( a total of 10 digits)
+a-10
+b-11
+c-12
+d-13
+e-14
+f-15
+
+
+float data type:
+================
+number with decimal part
+>>> avg=2.014
+>>> type(avg)
+<class 'float'>
+>>> x=1.0
+>>> type(x)
+<class 'float'>
+
+
+complex: 
+x+iy    x- real	   y-imag
+
+but in python u should represent complex data type in the form of : x+yj
+c1=2+i3
+in python:    c1=2+3j
+
+>>> c3=10+74J
+>>> type(c3)
+<class 'complex'>
+
+>>> c4=5+j2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'j2' is not defined
+
+
+>>> c1
+(2+3j)
+>>> c3
+(10+74j)
+>>> c1+c3
+(12+77j)
+>>> c1-c3
+(-8-71j)
+>>> c1*c3
+(-202+178j)
+>>> c1/c3
+(0.04340028694404591-0.02116212338593974j)
+
+
+str: is a collection of characters enclosed with in single/double/triple single/triple double quotes
+str stands for string
+>>> title='core python'
+>>> type(title)
+<class 'str'>
+>>> faculty="pavan sir"
+>>> type(faculty)
+<class 'str'>
+>>> msg=''' iam fine
+... here
+... what about
+... u???
+... where are
+... you??? '''
+>>> type(msg)
+<class 'str'>
+>>> txt=""" iam
+... learning
+... core python
+... & my faculty name
+... is
+... pavan
+... sir """
+>>> type(txt)
+<class 'str'>
+
+	
+slicing:
+to perform slice operation python provides the following operator :
+
+varname[start:end]
+it will return the data from start index to end index-1
+>>> fac[0:2]
+'pa'
+>>> fac
+'pavan'
+
+if the starting index is not specified: default value will be considred which is: 0
+>>> fac[:4]
+'pava'
+
+if end index is not specified: default value wil be considered: which is : len(str)
+len() : is a predefined/builin function which will return length of the given string as an argument
+arugment: is nothing input supplied to the function call
+
+>>> fac[0:]
+'pavan
+
+if both values are not provided: in that case also python consider default values
+start index: 0
+end index: len(str)
+
+step value:
+
+var[start:end:step]
+
+if step value not provided: default value : +1
+
+>>> fac[0:5:2]
+'pvn'
+>>> fac[0:5:3]
+'pa'
+>>>
+
+
+in forward direction: var[sindex:eindex]      sindex to eindex-1
+in reverse direction: var[sindex:eindex]		sindex to eindex+1
+
+fac[-1:-5]		 will return the data from -1 to ? -4
+>>> fac[-1:-5:-1]
+'nava'
+>>> fac[-1:-5:-3]
+'na'
+
+while accessing the data in reverse/backward direction: if starting index is not specified: default value: -1
+if end index is not specified : default value : 
+
+varname[start:end:step]
+
+in forward direction: step: +1
+starting index: 0
+end index: len(str)-1
+
+in backward direction:  step:-1
+
+start index: default value:-1
+end index: -(len(str)+1)
+
+in forward direction:   fac[0:8]		return the dat: from index 0 to (8-1)
+in backward direction: fac[-1:-6:-1]   return the data: from -1 to (-6+1)
+
+
+various data types: int , float, complex, str , bool 
+
+bool data type: True, False :: boolean values
+>>> res1=77<190
+>>> res1
+True
+>>> type(res1)
+<class 'bool'>
+>>> res2=9>12
+>>> res2
+False
+>>> type(res2)
+<class 'bool'>
+
+Arithmetic operations on boolean data type:
+>>> True+True
+2
+>>> True-True
+0
+>>> False*True
+0
+>>> False-False
+0
+>>> False+True
+1
+>>> false/True
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'false' is not defined. Did you mean: 'False'?
+
+in python the following data type are considred to primary data type:  int,float,complex,bool,str
+
+None data type: this value should be assigned to variable if u r not sure about what type of data to store  inside a variable
+
+>>> a=None
+>>> type(a)
+<class 'NoneType'>
+>>> a=2+6j
+>>> type(a)
+<class 'complex'>
+
+no scope for character variable 
+>>> ch='z'
+>>> type(ch)
+<class 'str'>
+
+Type casting/coercion:
+===================
+conversion one datatype into another data type
+Q: how to convert other data type to int type?
+ans:
+1. int(argument): int function can convert any data type into int type
+
+float=>int:  possible
+>>> int(2.03)
+2
+
+bool=>int: possible
+>>> int(True)
+1
+>>> int(False)
+0
+
+str=> int: possible ( but str must contains integers only)
+>>> int("987")
+987
+
+>>> int("two")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'two'
+
+
+>>> int("9.369")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '9.369'
+
+complex=>int: not possible
+
+>>> int(2+3j)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+
+
+Q: how to convert other data types into float type?
+ans: float()
+
+int=>float:possible
+>>> float(2)
+2.0
+bool=>float: possible
+>>> float(True)
+1.0
+>>> float(False)
+0.0
+str=>float: possible
+>>> float("1.025")
+1.025
+>>> float("58")
+58.0
+
+>>> float("ten.two")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: could not convert string to float: 'ten.two'
+
+>>> float("")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: could not convert string to float: ''
+
+
+complex=>float: not possible
+>>> float(5+9j)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: float() argument must be a string or a real number, not 'complex'
+
+
+
+Q: how to convert other data types into bool type?
+ans: bool()
+
+int=>bool: possible
+always nonzero treated as True,zero treated as a False
+x'
+>>> bool(12)
+True
+>>> bool(-9)
+True
+>>> bool(0)
+False
+
+float=>bool: possible
+
+>>> bool(1.02)
+True
+>>> bool(0.00000000000000000000000000000000000000000000000000000001)
+True
+>>> bool(0.0)
+False
+
+
+str=>bool: possible
+>>> bool("pavan")
+True
+>>> bool("0")
+True
+>>> bool("0.0000000000000000000000000")
+True
+>>> bool("")
+False
+>>> bool(" ")
+True
+
+complex=>bool: possible
+>>> bool(2+3j)
+True
+>>> bool(4j)
+True
+>>> bool(0+0j)
+False
+
+Q: how to convert other data types into complex type?
+ans: complex()
+
+int: compex : possible
+>>> complex(25)
+(25+0j)
+>>> complex(4,6)
+(4+6j)
+>>> complex(imag=4,real=6)
+(6+4j)
+
+float: complex : possible
+
+>>> complex(3.4)
+(3.4+0j)
+>>> complex(1.1,3.4)
+(1.1+3.4j)
+>>> complex(imag=2.5,real=6.39)
+(6.39+2.5j)
+>>> complex(imag=0.001,real=25)
+(25+0.001j)
+
+
+bool: complex : possible
+
+>>> complex(True)
+(1+0j)
+>>> complex(True,True)
+(1+1j)
+>>> complex(False,True)
+1j
+
+
+str: complex : possible
+>>> complex("4")
+(4+0j)
+>>> complex("5","2")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: complex() can't take second arg if first is a string
+>>> complex("14",12)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: complex() can't take second arg if first is a string
+>>> complex(15,"4")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: complex() second arg can't be a string
+>>> complex("2.25")
+(2.25+0j)
+>>> complex("True")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: complex() arg is a malformed string
+
+Q: how to convert other data types into str type?
+ans: str()
+
+int to str: possible
+>>> str(25)
+'25'
+float to str: possible
+>>> str(0.00014)
+'0.00014'
+complex to str: possible
+>>> str(2+5j)
+'(2+5j)
+bool to str: possible 
+>>> str(True)
+'True'
+
+
+mutable
+immutable
+immutability: 
+all fundamental data types are immutable
+fundamental types: in python: int, float, complex,bool,str
+
+>>> x=25
+>>> id(x)
+1515574854640
+>>> x=99999
+>>> id(x)
+1515575892176
+
+
+Object reusability:
+
+>>> x=27
+>>> id(x)
+1515574854704
+>>> y=27
+>>> id(x)
+1515574854704
+>>> x=99
+>>> x=27
+>>> id(x)
+1515574854704
+>>> y=27
+>>> id(y)
+1515574854704
+>>> x=124
+>>> y
+27
+>>> id(x)
+1515574857808
+>>> id(y)
+1515574854704
+
+
+print statement:
+print(): is a predefined function in python which is used to display any message to console(monitor)
+
+i want to print a message: welcome to python programming
+print("welcome to python programming")
+
+backslash characters:
+\n	newline
+\t	tab
+
+string interpolation:
+the process of substituting the value of a variable with in a string in the place of placeholders with in a string
+
+it can be done in so many ways:
+1) % format specifier
+2) format() method
+3) f string - 3.6 version  PEP498
+	update to f-string in 3.8 version
+
+
+how to read the data/input given by the user during program execution time?(dynamic input)
+input(): 
+
+write a code to read an integer using c program:
+int x;
+printf("Enter a value for x : ");
+scanf("%d",&x);
+
+but in python:
+x=eval(input("Enter a value : "))
+
+Operators:
+what is an operator?
+is a symbol that is used to perform certian operation
+what is an operand?
+is the data on which that operation is carried out
+how to do u classify operators?
+based no.of operands we can classify the operators in the following ways:
+1) unary operator		2) binary operator		3) ternary operator
+
+python supports the following operators:
+1) Arithmetic operatros:
+	+
+	-
+	*
+	/		real division: exact answer:
+	always: result: float
+	//		floor division : returns floor value of (exact answer)
+	result: depends on type of operands
+	%		modulo division: returns remainder
+	**  power operator: 2**3
+CONCLUSION: all arithmetic opertors will work upon: int,float, bool 
+but if the operands are complex : //,% will not work 
+on str type: +, * will work 
+concatenation opertor:
+>>> "pavan"+32
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> "pavan "+"sir"
+'pavan sir'
+
+Repetition operator: (*)
+when one of the operands is str then * will act as Repetition operator
+>>> "pavan"*3
+'pavanpavanpavan'
+>>> 5*'pavan'
+'pavanpavanpavanpavanpavan'
+>>> 2.0*'pavan'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'float'
+>>> True*'pavan'
+'pavan'
+>>> False*"pavan"
+''
+
+
+2) Relational operators: are used to check relation between two operands
+<
+>
+<=
+>=
+Relational expression: consisting of operands connected through relational operators
+alwasy relational expression returns: bool value: True/False
+
+>>> 12>258
+False
+>>> 12<258
+True
+>>> 12>=12
+True
+>>> 13<=15
+True
+
+conclusion: relational opertors will work for: int, float,bool 
+if operands are complex type: it will not work
+
+>>> 2+3j>3+5j
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '>' not supported between instances of 'complex' and 'complex'
+>>> 2+3j>=3+5j
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '>=' not supported between instances of 'complex' and 'complex'
+>>> 2+3j<3+5j
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'complex' and 'complex'
+>>> 2+3j<=3+5j
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError
+
+if operands are str type: relational operators will work
+here for comparison it will consider unicode character of every character
+to know the unicode character python provides: ord(): ordinal value
+chr(unicode character):  will return character corresponds to the given unicode character
+>>> chr(97)
+'a'
+>>> chr(65)
+'A
+>>> 'apple'>'box'
+False
+>>> ord('a')
+97
+>>> ord('b')
+98
+>>> ord('A')
+65
+>>> ord('0')
+48
+>>> 'ant'>'anti'
+False
+>>> 'ant'>='ant'
+True
+
+Equality opertor:
+== equality 
+!=	 not equal
+
+conclusion: will work for: int, float, bool, complex, str 
+>>> 'pavan'=='PAVAN'
+False
+>>> 'pavan'=='pavan'
+True
+>>> 'pavan'!='PAVAN'
+True
+
+
+>>> 2+3j == 2+3j
+True
+>>> 2+3j != 2+3j
+False
+
+3) Logical operators
+4) Bitwise operators
+5) Assignment operator
+6) special operators 
+
+Logical operators:
+===============
+and
+or
+not: is used to reverse the result 
+
+	Truth table of logical operator:
+	===============================
+
+	op-1			op-2			and				or
+	==============================================
+	T				T				T				T
+	==============================================
+	T				F				F				T
+	==============================================
+	F				T				F				T
+	==============================================
+	F				F				F				F
+	==============================================
+
+
+
+what is the behaviour of logical operators if operands are non-boolean datatype???
+>>> 23 and 45
+45
+>>> 45 and 23
+23
+>>> 0 and 45
+0
+>>> 478 and 0
+0
+>>> 121 or 78
+121
+>>> 0 or 78
+78
+>>> -7 and -5
+-5
+>>> -5 or 0
+-5
+
+short circuit evalution/operation:
+
+>>> 24 and 12//3
+4
+>>> 24 and 10/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>> 0 and 10/0
+0
+>>> 123 or 10/0
+123
+>>> 0 or 10/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+
+
+develop  a condition to check given traingle is equilateral or not
+side1		side2			side3
+
+side1==side2    and    side2==side3
+
+for isosceless:   s1==s2	or	s2==s3	or	s3==s1
+
+company is announced bonus=50,000 for employees whose position: manager  & basic: 75000
+
+position=='manager'   and  basic==75000
+
+another kind of bonus: 5000  if position: clerk / basic: 10000/ exp>=5/ city: chirala
+
+position=='clerk'	   or	basic==10000  or	exp>=5	or	city=='chirala'
+	bonus=5000
+
+chaining of operators:
+===================
+
+Equilateral traingle:	side1==side2    and    side2==side3
+
+by using chaining of operators:		side1==side2==side3
+
+n: check is it in the range of 10 to 250
+
+	n>=10	and  	n<=250
+
+using chaining of operators:   10<=n<=250
+
+Bitwise operators:
+
+&	bitwise AND
+|	bitwise OR
+^	bitwise XOR
+<<	bitwise LEFTSHIFT
+>>	bitwise RIGHTSHIFT
+~	bitwise ONE'S COMPLEMENT
+
+
+TABLE:
+
+		OP-1			OP-2		&			|			^
+		==================================================
+		1				1			1			1			0	
+		==================================================
+		1				0			0			1			1
+		==================================================
+		0				1			0			1			1
+		==================================================
+		0				0			0			0			0
+
+
+
+A=17	1	0	0	0	1
+B=29	1	1	1	0	1
+===========================
+^		0	1	1	0	0
+|		1	1	1	0	1
+&		1	0	0	0	1
+
+
+>>> a=17
+>>> b=29
+>>> a&b
+17
+>>> a|b
+29
+>>> a^b
+1
+
+a<<2 : 
+for left shift operation::: we can expect the result based on formula: value x 2^n
+for right shift operation::: we can expect the result based on formula: value / 2^n
+a=5
+>>> a=5
+>>> a<<3
+40
+>>> b=14
+>>> b<<2
+56
+
+a=200
+a>>3
+
+one's complement operation:
+will revese all the bits 
+if the value is +ve: after this operation: result is -ve
+if the value is -ve: after this operation: result is +ve
+if x is +ve  :  ~x: result -(x+1)
+x=88		~x: -(89)
+
+if x is -ve:   ~x: result +(x-1)
+z=-14		~z: +(13)
+
+
+Assignment Operator:
+=======================
+variable=value
+
+x=x+2/y				compound assignment		x+=2/y				
+
+sum=sum*10+digit						sum*=10+digit
+
+in python there is no support for : increment/decrement operator
+>>> x=5
+>>> x++
+  File "<stdin>", line 1
+    x++
+       ^
+SyntaxError: invalid syntax
+>>> x--
+  File "<stdin>", line 1
+    x--
+       ^
+SyntaxError: invalid syntax
+
+in c,c++,java: ternary operator: conditional operator:	?:
+python dont support conditional operator
+10<20: relational operator
+but  in python we can write conditional expression
+
+by using two keyword: if   else
+
+value-1  if condition else value-2
+
+if condition is True: value-1 will be the result otherwise value-2
+
+Nested conditional  expression: if one conditional expression is used as a part of another conditional expression it is known as nested conditional expression
+
+		value-1  if cond-1 else value-2 if cond-2	 else value-3
+
+special operators:
+===============
+
+identity operators: for address comparison
+is
+is not
+
+>>> x=12
+>>> y=12
+>>> id(x)
+2239202001488
+>>> id(y)
+2239202001488
+>>> x is y
+True
+>>> z=99
+>>> x is z
+False
+>>> x is not z
+True
+
+membership operators:
+
+in
+not in
+
+the above two operators are highly useful when we deal with collection data type: list,tuple,set,frozenset,dict,str
+
+>>> faculty='pavan sir'
+>>> 'z' in faculty
+False
+>>> 'n' in faculty
+True
+>>> 'van' in faculty
+True
+>>> 'xyz' not in faculty
+True
+>>> 'pav' not in faculty
+False
+
+operator precedence:
+associativity rule
+
+int,float,complex,str,bool,None,List,Tuple,set,frozenset,dict,range etc
+
+COLLECTION DATA TYPES:
+========================
+when we want to represent collection/group of values as a single entity then we require a concept called
+collection datatype: list,set,tuple,frozenset,dict,range,str etc
+s1=78,s2=89,s3=100,.....................s100=25
+
+L	S	D	- MUTABLE
+T	F	R	- IMMUTABLE
+
+List datatype:
+1) if we want to represent a group of values as a single entity where insertion order must be maintained
+2) how to create a list:
+so many ways:
+a) []
+>>> mks=[25,89,36,12]
+>>> type(mks)
+<class 'list'>
+
+b) list():
+
+>>> x=list([10,20,30,40,50])
+>>> type(x)
+<class 'list'>
+>>> x=list((10,20,30,40,50))
+>>> type(x)
+<class 'list'>
+>>> y=list({11,10,25,-9,255})
+>>> type(y)
+<class 'list'>
+Error:
+>>> vals=list(25,89,33)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list expected at most 1 argument, got 3
+
+c) eval(): by reading the values dynamically from the user
+
+
+2) hetergeneous elements allowed
+>>> info=['pavan sir',True,2+3j,100.23,1258]
+>>> type(info)
+<class 'list'>
+3) duplicates are allowed
+>>> nums=[11,22,33,22,11,33,33,33,22,44,55,11]
+>>> type(nums)
+<class 'list'>
+>>> nums
+[11, 22, 33, 22, 11, 33, 33, 33, 22, 44, 55, 11]
+
+4) indexing/slicing is also possible
+>>> vals=[14,236,1,89,-7]
+>>> vals[3]
+89
+>>> vals[-2]
+8
+
+slicing:
+>>> vals[2:5]
+[1, 89, -7]
+
+
+
+5) list is growable/shrinkable because list obj is mutable:
+>>> vals
+[14, 236, 1, 89, -7]
+>>> vals.append(2222)
+>>> id(vals)
+1945252492480
+>>> del vals[0]
+>>> vals
+[236, 1, 89, -7, 2222]
+>>> id(vals)
+1945252492480
+
+len(list_obj): it will return no of elements present in that list object
+>>> len(vals)
+5
+
+Tuple data type:
+===================
+list			 vs			tuple:     both are almost similar except one point
+L	S	D - MUTABLE
+T	F	R-IMMUTABLE
+
+list is mutable where as tuple is immutable : 
+
+syntax to create tuple of values: 
+a) 
+>>> t1=(14,'pavan sir',True,25.23,9+8j,'pavan sir',14)
+>>> type(t1)
+<class 'tuple'>
+>>> t1
+(14, 'pavan sir', True, 25.23, (9+8j), 'pavan sir', 14)
+>>> t1[0]
+14
+>>> t1[3:23]
+(25.23, (9+8j), 'pavan sir', 14)
+>>> t1.append(100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'appen
+
+
+
+b) tuple(): >>> t2=tuple({11,25,36,0,8,9})
+>>> type(t2)
+<class 'tuple'>
+
+c) input(): dynamic input
+
+d) with single value:
+
+>>> t4=(10)
+>>> type(t4)
+<class 'int'>
+>>> t5=(895,)
+>>> type(t5)
+<class 'tuple'>
+>>> t6=11,
+>>> type(t6)
+<class 'tuple'>
+
+
+
+set data type:
+
+1) when insertion order is not that much important- then go for set data type
+2) syntax:
+a) {}
+>>> accno={1245,1258,3698,1111}
+>>> type(accno)
+<class 'set'>
+>>> regnos={1234,2569,1234,7896,7896}
+>>> regnos
+{7896, 2569, 1234}
+
+3) duplicates will not allowed
+>>> s3={11,22,33,11,22,33,11,22,33}
+>>> s3
+{33, 11, 22}
+
+4) SET OBJECT IS MUTABLE
+5) hetergeneous elements
+>>> s1={10,2.56,6+9j,True}
+>>> type(s1)
+<class 'set'>
+6) set object is not subscriptable
+>>> s1
+{(6+9j), 10, 2.56, True}
+>>> s1[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+7) growable in nature
+>>> s1.add(60)
+>>> s1
+{(6+9j), 2.56, True, 10, 60}
+
+frozenset datatype: immutable
+
+range(start,end,step):  will generate range of values from start to end-1
+default step  value: +1
+>>> vals=list(range(1,25))
+>>> vals
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+>>> evens=tuple(range(10,500,2))
+>>> evens
+(10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 198, 200, 202, 204, 206, 208, 210, 212, 214, 216, 218, 220, 222, 224, 226, 228, 230, 232, 234, 236, 238, 240, 242, 244, 246, 248, 250, 252, 254, 256, 258, 260, 262, 264, 266, 268, 270, 272, 274, 276, 278, 280, 282, 284, 286, 288, 290, 292, 294, 296, 298, 300, 302, 304, 306, 308, 310, 312, 314, 316, 318, 320, 322, 324, 326, 328, 330, 332, 334, 336, 338, 340, 342, 344, 346, 348, 350, 352, 354, 356, 358, 360, 362, 364, 366, 368, 370, 372, 374, 376, 378, 380, 382, 384, 386, 388, 390, 392, 394, 396, 398, 400, 402, 404, 406, 408, 410, 412, 414, 416, 418, 420, 422, 424, 426, 428, 430, 432, 434, 436, 438, 440, 442, 444, 446, 448, 450, 452, 454, 456, 458, 460, 462, 464, 466, 468, 470, 472, 474, 476, 478, 480, 482, 484, 486, 488, 490, 492, 494, 496, 498)
+>>> type(evens)
+<class 'tuple'>
+>>> r1=range(4,78,10)
+>>> r1
+range(4, 78, 10)
+>>> type(r1)
+<class 'range'>
+>>> for ele in r1:
+...     print(ele)
+...
+4
+14
+24
+34
+44
+5
+
+
+>>> x=set(range(15))
+>>> x
+{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}
+
+
+dict data type:
+============
+dictionary is a collection of items
+every item consisting of key,value in the form of key:value
+symbol: {}
+
+>>> d1={'c langague':1000,2000:'python','java':5000}
+>>> type(d1)
+<class 'dict'>
+** dict will allow key, value of any combination (ie.. any data type)
+** duplicate keys not allowed
+>>> d1
+{'c langague': 1000, 2000: 'python', 'java': 5000, 'cpp': 6600.99}
+>>> len(d1)
+4
+>>> d1['java']=25000
+>>> d1
+{'c langague': 1000, 2000: 'python', 'java': 25000, 'cpp': 6600.99}
+** values can be duplicated
+>>> d1['data structure']=1000
+>>> d1
+{'c langague': 1000, 2000: 'python', 'java': 25000, 'cpp': 6600.99, 'data structure': 1000}
+
+Flow control statements: describes the order in which statements will be executed at runtime
+1) conditional control statement:
+simple if statement
+if else statement
+elif statement
+2) loop control statement:
+while
+for
+
+while with else
+for  with else
+3) transfer statement: break, continue
+
+
+
+conditional control statement:
+1) simple if statement
+2) if else
+3) elif statement
+4) nested if else statement
+
+sequential flow of execution: some problems may arise d:
+syntax of simple if statement:
+
+	if(condition):
+		block of statements
+	statement-x
+	if condition is True block of statements will be executed otherwise control will be directly trasnferred to statement-x
+
+
+syntax of if else statment
+---------------------------------
+if(condition):
+	BLOCK-1
+else:
+	BLOCK-2
+statement-x
+if condition is True: block-1 & statement -x will be executed
+if condition is False: block-2 & statement-x wil be executed
+
+Note: pair of braces are optional
+
+nested if - else statement:
+=========================
+FORM-1:
+	if(condition-1):
+		if(condition-2):
+			BLOCK-A
+		else:
+			BLOCK-B
+	else:
+		BLOCK-C
+
+BLOCK-A: CONDITION-1&2: BOTH ARE TRUE
+BLOCK-B: CONDITION-1:TRUE & CONDITION-2: FALSE
+BLOCK-C: CONDITION-1: FALSE
+
+FORM-2:
+if condition-1::
+	BLOCK-1
+else:
+	if condition-2:
+		BLOCK-2
+	else:
+		BLOCK-3
+BLOCK-1: CONDITION-1: TRUE
+BLOCK-2: CONDITION-1: FALSE & CONDITION-2: TRUE
+BLOCK-3: CONDITION-1&2: FALSE
+
+FORM-3:
+
+if condition-1:
+	if condition-2:
+		BLOCK-X
+	else:
+		BLOCK-Y
+else:
+	if condition-3:
+		BLOCK-A
+	else:
+		BLOCK-B
+BLOCK-X: CONDITION-1: TRUE & CONDITION-2: TRUE
+BLOCK-Y: CONDITION-1: TRUE & CONDITION-2: FALSE
+BLOCK-A: CONDITION-1: FALSE & CODNTION-3: TRUE
+BLOCK-B: CONDITION-1: FALSE & CONDITION-3: FALSE
+
+elif statement: 
+code-1:	red
+code-2:	blue
+code-3:  green
+code-4:  black
+code-5:  yellow
+any: invalid color code
+
+syntax of elif statement:
+if cond-1:
+	block-1
+elif cond-2:
+	block-2
+elif cond-3:
+	block-3
+elif cond-4:
+	block-4
+else:
+	default block
+
+
+Loop/iterative control statement:
+====================
+looping/iteration: is a process of executing a block of statemennts repeatedly 
+python supports the following loop control statements:
+=============================================
+1) while: 
+2) for 
+
+
+syntax of while statement:
+
+	while(condition):
+		block of statement
+
+Walrus operator: 
+	:=
+
+transfer statements: these keywords are used generally within looping process
+break: 
+continue: is a keyword in python which is used to stop current iteration & 
+it will transfer the flow of control to the top of the loop 
+
+generally else block is associated with if statement
+but in python we can associate else block with while & for statements
+
+while condition-1:
+	if condition-2:
+		break
+	block-A
+else:
+	statement-x
+
+else block will be executed if the looping process is completed successfully
+at any point of time if the looping is stopped because of break keyword in such case else
+block will not be executed
+
+
+for loop:
+=========
+1) for is a keyword
+2) looping / iteration : 
+
+for    var-name in iterable:
+	action on that value
+
+function:
+the set of statements following same indentation will be treated as a block of statements
+def function_name():
+	st-1
+	st-2
+	st-3
+	st-4
+	st-5
+
+Note: function wont be executed on theiry own , they  must be called
+
+modules:
+what is a module:
+ every python program/ file itself act as a module
+ after importing a module using import keyword, members of that module
+ must be accessed using the following syntax:
+ modulename.membername
+
+ module aliasing:
+ import bankingapplication as bapp
+
+ how to import more than one module???
+ import mod1,mod2,mod3......mod10
+
+ module alising for more than one module???
+ import mod1 as m1, mod2 as m2,mod3 as m3
+
+ once alias name is given to a module, is it possible to use original name within 
+ the program?
+ no
+
+
+
+fun5.py: i want to use both the modules: fun1,fun4
+
+without using module name is there any chance to access member of that module
+directly???
+from mod_name import mem1
+from mod import mem1,mem2,.....memx
+
+alternative way:
+from mod import *
+* means u can access all the members of above module without modulename within
+the current python program
+
+fun1.py: display(), course,faculty,duration,cost
+fun4.py: withdraw(),deposit(),accno,bal,cost
+
+command line arguments:
+sys
+argv: it will receive all command line arguments
+
+dir(module): is a built in function that provides list of names belongs to that module
+but we dont get any information whether that names represents variable, function or class. To get detailed information bettter to use help() function
+dir(): current module's information it will return in the form of a list object
+
+name of the python program : dir1
+
+dir(dir1)
+
+['First', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'c1', 'math', 'result', 'test']
+
+name of the module: random
+random(): will return a random float value with in the range of 0 to 1
+non inclusive
+>>> random()
+0.8681228615054766
+>>> random()
+0.3911344096159284
+>>>
+>>> random()
+0.07029165805699633
+>>> random()
+0.09689389652267166
+>>> random()
+0.040184526628896045
+>>> random()
+0.7317274079633717
+>>> random()
+0.1334397936492242
+>>> random()
+0.16381499323315818
+>>> random()
+0.043596694031407424
+>>> random()
+0.4965892213244547
+>>> random()
+0.9608581767253229
+>>> random()
+0.8515229462089235
+>>> random()
+0.5970544125369498
+>>> random()
+0.07837891615759152
+>>> random()
+0.9133275936259772
+>>> random()
+0.6936361308337942
+>>> random()
+0.8922809148004823
+>>> random()
+0.25126194075709307
+>>> random()
+0.018361904035890664
+>>> random()
+0.5873153240149831
+
+uniform(value1,value2): will return random float value in the user specified range 
+>>> uniform(5,11)
+5.145522974990897
+>>> uniform(5,11)
+10.587318410087775
+>>> uniform(5,11)
+5.785678945034536
+>>> uniform(5,11)
+8.464343120719452
+>>> uniform(5,11)
+8.31474156591226
+>>> uniform(5,11)
+9.04310161240998
+
+
+randint(value1,value2): return random integer in the specified range
+inclusive function:
+>>> randint(1,3)
+2
+>>> randint(1,3)
+1
+>>> randint(1,3)
+1
+>>> randint(1,3)
+2
+>>> randint(1,3)
+1
+>>> randint(1,3)
+2
+>>> randint(1,3)
+2
+>>> randint(1,3)
+3
+
+
+randrange(value1,value2,step):
+
+>>> randrange(73,127,10)
+123
+>>> randrange(73,127,10)
+113
+>>> randrange(73,127,10)
+113
+>>> randrange(73,127,10)
+103
+>>> randrange(73,127,10)
+83
+>>> randrange(73,127,10)
+103
+>>> randrange(73,127,10)
+93
+>>> randrange(73,127,10)
+83
+>>> randrange(73,127,10)
+113
+>>> randrange(73,127,10)
+73
+
+choice(): will return a random elements from the list/tuple/set of elements which 
+is given as an argument
+shuffle(): is used to shuffle all the elements of given iterable(list/tuple/set/str) object
+>>> from random import *
+>>> rooms=[101,102,103,104,105,106]
+>>> rooms
+[101, 102, 103, 104, 105, 106]
+>>> shuffle(rooms)
+>>> rooms
+[103, 106, 104, 102, 101, 105]
+>>> choice(rooms)
+105
+>>> choice(rooms)
+106
+>>> choice(rooms)
+104
+>>> choice(rooms)
+103
+>>> choice(rooms)
+101
+
+L	S	D - MUTABLE(CHANGEABLE)
+T	F	R-IMMUTABLE(NOT POSSIBLE FOR MODIFICATION)
+List Data strcutures:
+=================
+when we want to represent collection of values as a single entity 
+1)  insertion order
+2) duplicate values
+3) mutable
+4) collection of both homogenous / heterogeneous elements
+5) access: index/slicing
+6) dynamic 
+
+creation of list object:
+=================
+1) empty list: 
+>>> vals=[]
+>>> type(vals)
+<class 'list'>
+
+>>> nums=list()
+>>> type(nums)
+<class 'list'>
+
+
+2) if we know elements:
+>>> marks=[55,78,55,99,100,25,78]
+>>> type(marks)
+<class 'list'>
+
+using index:
+
+>>> marks[0]
+55
+>>> marks[-1]
+78
+
+
+slicing:
+>>> marks[2:5]
+[55, 99, 100]
+
+3) with dynamic input:
+>>> rnos=eval(input("Enter student roll numbers : "))
+Enter student roll numbers : [101,102,258,69,121]
+>>> type(rnos)
+<class 'list'>
+
+
+
+4) using list() function:
+>>> evens=list(range(20,80,2))
+>>> evens
+[20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78]
+>>> type(evens)
+<class 'list'>
+
+5) using split() function:
+====================
+>>> letters="learning python is very easy from pavan sir".split()
+>>> type(letters)
+<class 'list'>
+>>> letters
+['learning', 'python', 'is', 'very', 'easy', 'from', 'pavan', 'sir']
+>>> dates="29/27/25/14/36".split("/")
+>>> dates
+['29', '27', '25', '14', '36']
+>>>
+
+
+how to access elements of a list:
+===========================
+
+vals=[11,22,33,44,55]
+           0    1   2   3    4
+using while:
+using for:
+
+important functions/methods of List:
+1) len(): will return no.of elements
+2) count(ele):
+>>> marks
+[55, 78, 55, 99, 100, 25, 78]
+>>> marks.count(55)
+2
+>>> marks.count(999)
+0
+
+3) index(ele): return index of the first occurenence
+>>> marks
+[55, 78, 55, 99, 100, 25, 78]
+>>> marks.index(55)
+0
+>>> marks.index(999)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 999 is not in list
+
+list is mutable:
+>>> marks
+[55, 78, 55, 99, 100, 25, 78]
+>>> id(marks)
+2417867521024
+>>> marks[0]=65
+>>> marks
+[65, 78, 55, 99, 100, 25, 78]
+>>> id(marks)
+2417867521024
+
+to add a element:
+1) append(ele)
+>>> marks
+[65, 78, 55, 99, 100, 25, 78]
+>>> marks.append(100)
+>>> marks
+[65, 78, 55, 99, 100, 25, 78, 100]
+
+2) insert(index,ele):
+>>> nums.insert(2,30)
+>>> nums
+[10, 20, 30, 40, 50]
+
+>>> nums.insert(777777,60)
+>>> nums
+[10, 20, 30, 40, 50, 60]
+>>> nums.insert(-23,5)
+>>> nums
+[5, 10, 20, 30, 40, 50, 60]
+
+
+extend(iterable):  
+l1=[10,20,30]
+l2=[40,50,60,70,80,90]
+
+>>> l1.extend(l2)
+>>> l1
+[10, 20, 30, 40, 50, 60, 70, 80, 90]
+>>> l1.extend(100,110,120)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list.extend() takes exactly one argument (3 given)
+>>> l1.extend(100)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+
+
+interview question:
+
+>>> l2.extend("pavan sir")
+>>> l2
+[40, 50, 60, 70, 80, 90, 'p', 'a', 'v', 'a', 'n', ' ', 's', 'i', 'r']
+>>> l1
+[10, 20, 30, 40, 50, 60, 70, 80, 90]
+>>> l1.append("pavan sir")
+>>> l1
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 'pavan sir']
+
+
+deletion operation:
+=================
+remove(ele):
+>>> l1
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 'pavan sir']
+>>> l1.remove('pavan sir')
+>>> l1
+[10, 20, 30, 40, 50, 60, 70, 80, 90]
+>>> l1.remove(-8)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+
+
+pop(index):
+
+>>> l1
+[10, 20, 30, 40, 50, 60, 70, 80, 90]
+>>> l1.pop(1)
+20
+
+>>> l1.pop(99999)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: pop index out of range
+
+>>> l1.pop(-1)
+90
+
+>>> l1
+[10, 30, 40, 50, 60, 70, 80]
+
+
+
+pop():
+
+>>> l1
+[10, 30, 40, 50, 60, 70, 80]
+>>> l1.pop()
+80
+>>> l1.pop()
+70
+>>> l1.pop()
+60
+>>> l1.pop()
+50
+>>> l1.pop()
+40
+>>> l1.pop()
+30
+>>> l1.pop()
+10
+>>> l1.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: pop from empty list
+
+
+
+Ordering the elements:
+====================
+sort():
+
+>>> vals=[22,14,6,4,78,10,66,1]
+>>> vals.sort()
+>>> vals
+[1, 4, 6, 10, 14, 22, 66, 78]
+>>> nums=[41,25,17,100,36,9]
+>>> nums.sort(reverse=True)
+>>> nums
+[100, 41, 36, 25, 17, 9]
+
+
+reverse():
+>> nums=[24,True,'python',6+5j]
+
+>>> nums
+[(6+5j), 'python', True, 24]
+
+
+
+len()
+count(ele)
+index(ele)
+append(ele)
+insert(index,ele)
+extend(iterable)
+remove(ele)
+pop(index)
+pop()
+sort()
+reverse()
+
+
+aliasing:
+======
+
+>>> vals=[10,20,30,40,50]
+>>> nums=vals
+>>> nums[0]=55
+>>> vals
+[55, 20, 30, 40, 50]
+
+
+
+cloning: 
+copy()
+>>> x=vals.copy()
+>>> id(vals)
+2516337046464
+>>> id(x)
+2516336999872
+>>> x[1]=2+3j
+>>> x
+[55, (2+3j), 30, 40, 50]
+>>> vals
+[55, 20, 30, 40, 50]
+
+
+which mathematical operators we can use on list object?
++ concatenation operator:
+========================
+>>> L1=[11,22,33]
+>>> L2=[44,55,66,77,88,99]
+>>> L3=L1+L2
+>>> L3
+[11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+* repetition operator:
+==================
+
+>>> L4=L1*3
+>>> L4
+[11, 22, 33, 11, 22, 33, 11, 22, 33]
+
+
+Membership operators:
+========================
+in:  the keyword in can act as a membership operator 
+returns True if given element present in the List otherwise False
+>>> L1
+[11, 22, 33]
+
+>>> L1
+[11, 22, 33]
+>>> 44 in L1
+False
+>>> 22 in L1
+True
+
+not in 
+
+clear(): to remove all the elements of list
+>>> L1.clear()
+>>> L1
+[]
+>>> L2
+[44, 55, 66, 77, 88, 99]
+>>> del L2
+>>> L2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'L2' is not defined. Did you mean: 'L1'?
+
+Nested List:
+===========
+>>> info=[11,[25,True,9+7j],1.025]
+>>> info[1][2]
+(9+7j)
+
+*******List comprehension************
+=====================================
+range of values: 145 to 210
+evens=[]
+for x in range(145,211):
+	if x%2==0:
+		evens.append(x)
+print(evens)
+
+
+
+syntax:
+	list_obj_name=[item for item in iterable if condition]
+	even=[x for x in range(145,211) if x%2==0]
+
+>>> even
+[146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 198, 200, 202, 204, 206, 208, 210]
+
+cities=['chirala','bza','gtr','machilipatnam','hyd','chennai','kolkatta']
+names=[ele for ele in cities if len(ele)<=3]
+>>> names
+['bza', 'gtr', 'hyd']
+
+city_upper=[ele.upper() for ele in cities]
+
+>>> nums=list(range(11,21))
+>>> nums
+[11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+>>> vals=[x+5 for x in nums]
+>>> vals
+[16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+
+>>> data=[[ele,len(ele)] for ele in city_upper]
+>>> data
+[['CHIRALA', 7], ['BZA', 3], ['GTR', 3], ['MACHILIPATNAM', 13], ['HYD', 3], ['CHENNAI', 7], ['KOLKATTA', 8]]
+
+
+
+Tuple data structure: 
+1) insertion order
+2) duplicate values
+3) index/slicing
+4) immutable
+5) heterogeneous elements
+
+various ways to create a tuple:
+1) empty tuple
+>>> t1=()
+>>> type(t1)
+<class 'tuple'>
+
+
+2) if u know the values
+>>> t2=(10,20,30,40,50)
+>>> type(t2)
+<class 'tuple'>
+>>> t3=11,22,33
+>>> type(t3)
+<class 'tuple'>
+>>> t4=(58)
+>>> type(t4)
+<class 'int'>
+>>> t4=(58,)
+>>> t5=77,
+>>> type(t4)
+<class 'tuple'>
+>>> type(t5)
+<class 'tuple'>
+
+
+3) dynamic input:
+>>> t6=eval(input("enter tuple of values : "))
+enter tuple of values : (9,1.025,"pavan")
+>>> type(t6)
+<class 'tuple'>
+
+
+4) tuple():
+>>> t7=tuple("core python")
+>>> type(t7)
+<class 'tuple'>
+>>> t7
+('c', 'o', 'r', 'e', ' ', 'p', 'y', 't', 'h', 'o', 'n')
+>>> t8=tuple(range(14,100,7))
+>>> t8
+(14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98)
+
+Accessing elements of a tuple:
+>>> t8
+(14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98)
+>>> t8[0]
+14
+>>> t8[-1]
+98
+>>> t8[2:8]
+(28, 35, 42, 49, 56, 63)
+>>>
+
+
+
+len():
+count(ele)
+index(ele)
+
+
+>>> len(t8)
+13
+>>> t8
+(14, 21, 28, 35, 42, 49, 56, 63, 70, 77, 84, 91, 98)
+>>> t8.count(9999)
+0
+>>> t8.index(56)
+6
+>>> t8.index(560)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: tuple.index(x): x not in tuple
+
+===================================================================
+the following methods are not applicable for tuple object as tuple is immutable:
+===================================================================
+append(ele)
+insert(index,ele)
+extend(iterable)
+clear()
+remove(ele)
+pop(index)
+pop()
+sort()
+reverse()
+
+
+
+sorted(), reversed():
+===============
+
+>>> t1=(55,-9,12,100,4,36,8,96)
+>>> id(t1)
+2511911781312
+>>> sorted(t1)
+[-9, 4, 8, 12, 36, 55, 96, 100]
+>>> t2=tuple(sorted(t1))
+>>> t2
+(-9, 4, 8, 12, 36, 55, 96, 100)
+>>> reversed(t2)
+<reversed object at 0x00000248D99E6800>
+>>> t2
+(-9, 4, 8, 12, 36, 55, 96, 100)
+>>> t3=tuple(reversed(t2))
+>>> t3
+(100, 96, 55, 36, 12, 8, 4, -9)
+>>> id(t2)
+2511911781872
+
+
+mathematical operations :
+===========================
++: concatenation operators
+*: repetition operator
+
+>>> t1
+(55, -9, 12, 100, 4, 36, 8, 96)
+>>> t4
+(58,)
+>>> t10=t1+t4
+>>> t10
+(55, -9, 12, 100, 4, 36, 8, 96, 58)
+>>> t11=t4*5
+>>> t11
+(58, 58, 58, 58, 58)
+
+
+
+packing& unpacking:
+====================
+
+packing: >>> vals=14,True,6+98j,0.00014
+
+unpacking:
+
+>>> a,b,c,d=vals
+>>> a
+14
+>>> b
+True
+>>> c
+(6+98j)
+>>> d
+0.00014
+
+Tuple comprehension:
+========================
+no chance for tuple comprehension
+
+>>> nums=(x**2 for x in range(1,6))
+>>> type(nums)
+<class 'generator'>
+
+Set data structures:
+=====================
+collection of values as a single object
+1) insertion order-not maintained
+>>> s1={10,2.3,5,-9,True,'pavan'}
+>>> s1
+{True, 2.3, 5, -9, 10, 'pavan'}
+
+2) duplicates are not allowed
+>>> s2={11,11,11,11,11,11,11}
+>>> s2
+{11}
+
+3) mutable:
+
+4) growable :
+
+5) heterogeneous
+6) indexing/slicing:
+>>> s1[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> s1[2:4]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+
+len():
+>>> len(s1)
+6
+
+
+empty set:
+>>> s3={}
+>>> type(s3)
+<class 'dict'>
+>>> s3=set()
+>>> type(s3)
+<class 'set'>
+
+the following methods are not applicable for set object:
+===================================================
+count(ele)
+index(ele)
+append(ele)
+insert(index,ele)
+extend(iterable)
+
+to add elements to set object:
+===========================
+add(ele)
+
+>>> s2
+{11}
+>>> s2.add(-8)
+>>> s2.add('pavan')
+>>> s2.add(100)
+>>> s2
+{-8, 100, 11, 'pavan'}
+>>> id(s2)
+2511912036928
+>>> s2.add(5+6j)
+>>> id(s2)
+2511912036928
+
+
+update(it1,it2,it3....):
+>>> l1=[47,56,89]
+>>> t1=(777,8888,9999,1111)
+>>> s1
+{True, 2.3, 5, -9, 10, 'pavan'}
+>>> s2
+{100, 11, 'pavan', (5+6j), -8}
+>>> s2.update(l1,t1,s1)
+>>> s2
+{True, 2.3, 100, 5, 777, 10, 11, 'pavan', 8888, 47, 9999, -9, 1111, (5+6j), -8, 89, 56}
+>>> s2.update(5,6,7)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+
+
+
+what is the difference between add(ele) & update(arg1,arg2,......)?
+please refer the material
+
+
+to delete an element from a set:
+==============================
+remove(ele):
+>>> s2.remove('pavan')
+>>> s2
+{True, 2.3, 100, 5, 777, 10, 11, 8888, 47, 9999, -9, 1111, (5+6j), -8, 89, 56}
+
+pop():
+
+>>> s2.pop()
+True
+>>> s2.pop()
+2.3
+>>> s2.pop()
+100
+
+
+discard(ele): if given element not there it wont rise any error
+
+
+clear():
+>>> s2.clear()
+>>> s2
+set()
+
+set comprehension:
+====================
+
+>>> s5={x.upper() for x in "pavan sir"}
+>>> s5
+{'I', 'V', 'S', 'N', 'P', 'A', 'R', ' '}
+
+
+mathematical operations:
+u cant use + , * on set object
+
+union():
+symbol: |
+
+>>> s4=s1.union(s2)
+>>> s4
+{True, 2.3, 5, 10, 'pavan', 55, 22, -9, 88}
+
+>>> s5=s1|s2
+>>> s5
+{True, 2.3, 5, 10, 'pavan', 55, 22, -9, 88}
+
+
+
+intersection():
+symbol: &
+
+>>> s1={10,20,30}
+>>> s2={20,30,40,50}
+>>> s5=s1.intersection(s2)
+>>> s5
+{20, 30}
+>>> s6=s1&s2
+>>> s6
+{20, 30}
+
+
+
+difference():
+symbol: -
+
+>>> s7=s1.difference(s2)
+>>> s7
+{10}
+>>> s9=s2.difference(s1)
+>>> s9
+{40, 50}
+>>>
+
+symmetric_difference():
+symbol: ^
+
+>>> vals=s1.symmetric_difference(s2)
+>>> vals
+{40, 10, 50}
+>>> nums=s1^s2
+>>> nums
+{40, 10, 50}
+
+
+
+
+Dictinoary Data structure:
+==========================
+collection of items:
+every item: key-value
+if we want to represent group of objects as key-value apri then we should go
+for dict data type
+L S D - MUTABLE
+1) insertion order is not preserved
+2) duplicate key are not allowed 
+values can be duplicated 
+3) heterogeneous 
+4) dict is mutable
+5) dynamic 
+6) indexing & slicing is not possible
+
+
+how to create a dictionary:
+=========================
+empty :
+
+>>> d1={}
+>>> type(d1)
+<class 'dict'>
+>>> d2=dict()
+>>> type(d2)
+<class 'dict'>
+
+
+if we know that data in advance then we can create a dict in the following ways:
+
+>>> computer={'leveno':99999.99,'mi':52678,'hp':120000}
+
+>>> computer={'marks':[100,25,14,78,69],2:6.9}
+>>> type(computer)
+<class 'dict'>
+
+how to access elements of a dictionary:
+by using key
+>>> computer[2]
+6.9
+>>> computer['marks']
+[100, 25, 14, 78, 69]
+
+if the given key doesnt exist in the dict it raises an error:KeyError
+>>> computer['pavan']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'pavan'
+
+all keys information:  keys()  return type: list object
+>>> d1={101:'a',105:'b',111:'c',145:'d'}
+>>> len(d1)
+4
+>>> for k in d1.keys():
+...     print(k)
+...
+101
+105
+111
+145
+
+d2={'a':99,'b':100,'c':99,'d':99}
+
+values():
+
+>>> for v in d1.values():
+...     print(v)
+...
+a
+b
+c
+d
+
+items():  k:v
+>>> for k,v in d1.items():
+...     print(k,"=>",v)
+...
+101 => a
+105 => b
+111 => c
+145 => d
+
+
+pop(key):
+>>> d1
+{'a': 99.8, 'b': 200, 'c': 55}
+>>> d1.pop('b')
+200
+>>> d1
+{'a': 99.8, 'c': 55}
+>>>
+
+
+popitem():
+
+>>> d1
+{'a': 99.8, 'c': 55}
+>>> d1.popitem()
+('c', 55)
+>>> d1
+{'a': 99.8}
+>>> d1.popitem()
+('a', 99.8)
+>>> d1.popitem()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'popitem(): dictionary is empty'
+
+clear():
+
+>>> d2={111:2.5,2+3j:'c1','result':"fail"}
+>>> len(d2)
+3
+>>> d2.clear()
+>>> d2
+{}
+
+get(key,default-value):
+here default value : is optional
+
+>>> d2
+{'a': 141, 'b': 555}
+>>> d2.get('b')
+555
+>>> d2['b']
+555
+>>> d2['x']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'x'
+>>> d2.get('x',-1)
+-1
+>>> d2.get('x','no item found with this key')
+'no item found with this key'
+>>> d2.get('a','no item found with this key')
+141
+>>> d2.get('x')
+
+
+update(dict)
+
+>>> d1.update(d2)
+>>> d1
+{'a': 141, 'b': 555}
+
+
+
+str data type:
+=============
+len()
+count(sub-string)
+index(substring)
+find(substring)
+
+strip()
+rstrip()
+lstrip()
+
+replace()
+split()
+join()
+
+upper(),lower(),swapcase(),capitalize(),title()
+
+islower(),isupper(),isalnum,isalpha,isdigit,isspace
+startswith
+endswith
+format
+
++ concatenation
+* repetition
+
+access: using index/slice 
+len(): length of the string
+
+finding substring using membership operator:
+>>> txt
+'pavan sir'
+>>> 'van' in txt
+True
+>>> 'xyz' in txt
+False
+ find(),index() method will do the same job as membership opertor
+ instead of returning bool value they wil return index 
+
+ >>> txt.find('car')
+-1
+>>> txt.find('van')
+2
+>>> txt.index('car')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> txt.index('van')
+2
+
+count(substring): no.of occurences 
+
+>>> msg1='car is a car , so many car models available, it s a genuine car'
+>>> msg1.count('car')
+4
+>>> msg1.count('van')
+
+strip():is used to remove spaces before  & after the string
+
+
+>>> text="   this is test message     "
+>>> id(text)
+2044647724320
+>>> id(text.strip())
+2044647724960
+>>> text.strip()
+'this is test message'
+
+
+>>> text.rstrip()
+'   this is test message'
+>>> text.lstrip()
+'this is test message     '
+
+replace(oldtext,newtxt)
+>>> msg1
+'car is a car , so many car models available, it s a genuine car'
+>>> msg1.replace("car","vehicle")
+'vehicle is a vehicle , so many vehicle models available, it s a genuine vehicle'
+
+x=eval(input("Enter a value :"))
+y=eval(input("Enter a value :"))
+z=eval(input("Enter a value :"))
+a=eval(input("Enter a value :"))
+
+how to read more than one value from the user using single input statement??
+ans:
+a,b,c,d=[eval(ele) for ele in input("Enter any 4 values: ").split()]
+
+
+join():
+>>> msg1
+'car is a car , so many car models available, it s a genuine car'
+>>> eles=msg1.split()
+>>> eles
+['car', 'is', 'a', 'car', ',', 'so', 'many', 'car', 'models', 'available,', 'it', 's', 'a', 'genuine', 'car']
+>>> msg2="$".join(eles)
+>>> msg2
+'car$is$a$car$,$so$many$car$models$available,$it$s$a$genuine$car'
+>>> msg3="   ".join(eles)
+>>> msg3
+'car   is   a   car   ,   so   many   car   models   available,   it   s   a   genuine   car
+
+to change the case:
+>>> t1='aBcdeFGH'
+>>> res2=t1.swapcase()
+>>>
+>>> res2
+'AbCDEfgh'
+>>> res3=t1.lower()
+>>> res3
+'abcdefgh'
+>>> res4=t1.upper()
+>>> res4
+'ABCDEFGH'
+>>> t2='pavan sir can take online classes only'
+>>> res5=t2.title()
+>>> res5
+'Pavan Sir Can Take Online Classes Only'
+>>> res6=t2.capitalize()
+>>> res6
+'Pavan sir can take online classes only'
+
+startswith()
+endswith()
+
+>>> msg1
+'car is a car , so many car models available, it s a genuine car'
+>>> msg1.startswith("pavan")
+False
+>>> msg1.startswith("car")
+True
+>>> msg1.endswith("car")
+True
+
+
+isalnum()
+isalpha()
+isdigit()
+isspace()
+islower()
+isupper()
+istitle()
+
+>>> pwd='abc123'
+>>> pwd.isalnum()
+True
+>>> pwd2='a@bc123'
+>>> pwd2.isalnum()
+False
+>>> pwd3='pavan'
+>>> pwd3.isalpha()
+True
+>>> pwd4='aBcD'
+>>> pwd4.isalpha()
+True
+>>> pwd5='aBcD34&'
+>>> pwd5.isalpha()
+False
+
+functions:
+===========
+
+is a group of statements that are required repeatedly in the program it is not recommended to write these statements seperately.
+we have defined these statements as a single unit and we can all that unit any no.of times: that unit is called as a function
+WORA: WRITE ONCE RUN ANYWHERE/ANY NO.OF TIMES
+ADVANTAGES OF FUNCTIONS:
+1) functions are used to control code redundancy
+2) any modifications we made to the body of the function those changes are
+reflect back to every function call
+
+ a function in python can be created with a keyword "def"
+ syntax:
+
+ 	def function_name(formal-parameters):
+		body of the function
+note:
+1) formal parameters are optional
+2) once function is defined, function wont be executed on its own it must be called
+
+
+
+classification of function:
+1) predefined/builtin function: which are developed by someone else
+ex: print()
+	input()
+	type()
+	id()
+
+2)userdefined function: functions created by on our own
+
+types of arguments:
+1) positional arguments:
+2) keyword arguments:
+note: python follows "PK" rule but not "KP" rule
+python supports positional argument first then after keyword arguments
+
+
+#demonstrate pk rule
+def test(a,b,c,d):
+    pass
+#test(10,20,30,40) #positional argument
+# test(c=33,a=11,22,d=44)  : SyntaxError: positional argument follows keyword argument
+#test(11,22,33,c=44) : TypeError: test() got multiple values for argument 'c'
+#test(c=99,a=66,d=88,b=77)  : no error
+#test(10,20,d=40): TypeError: test() missing 1 required positional argument: 'c'
+
+
+3) default arguments:
+
+#def argument: spl case
+def f1(n=10,a=25,x,y):
+    pass
+
+SyntaxError: non-default argument follows default argument
+Note: always first non default argument next default arguments
+
+4) variable length arguments:
+5) keyword variable length argument:
+
+
+def display(**info):
+	pass
+
+display(sname='aaswith',marks=999,rno=151,avg=99.9)
+display(eid=10456,sal=25000,exp=17.8)
+display(title='python by pavan',pages=145,cost=999.99)
+
+
+is it True ???? in python everything is treated as an object?
+x=98
+
+
+Nested function:
+==============
+if a function is defined within another function
+
+def withdraw():
+	st-1
+	st-2
+	def test():
+		st-3
+		st-4
+		st-5
+	===
+	===
+	st-25000
+
+   annonymous/lambda function:
+   ==========================
+1)    nameless function
+2)  instant purpose
+
+higher order functions: any function that takes another function as an argument
+then we can call it as higher order function
+
+
+def iseven(x):
+	return x%2==0
+iseven(47)
+
+
+how can i convert above function into lambda function?
+(lambda x:x%2==0)(25)
+
+
+filter(fun,iterable)
+map(fun,iterable)
